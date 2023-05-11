@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     public bool IsGrounded = true;
-    public bool IsJumping = false;
+    public int IsJumping = 0;
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -36,13 +36,11 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
-            IsGrounded = false;
-            Debug.Log(IsGrounded = false);
-            IsJumping= true;
+            IsJumping ++;
         }
-        if (IsJumping && Input.GetKeyDown(KeyCode.Space))
+        if (IsJumping == 2)
         {
-            IsJumping = false;
+            IsGrounded= false;
         }
     }
 
@@ -51,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.CompareTag("Ground"))
         {
             IsGrounded = true;
+            IsJumping = 0;
         }
     }
     private void Jump()
