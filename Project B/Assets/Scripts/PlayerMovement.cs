@@ -34,15 +34,16 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(dir * moveSpeed * Time.deltaTime);
 
         if (IsGrounded && Input.GetKeyDown(KeyCode.Space))
-             {
-               Jump();
-               IsGrounded = false;
-               IsJumping= true;
-            }
+        {
+            Jump();
+            IsGrounded = false;
+            Debug.Log(IsGrounded = false);
+            IsJumping= true;
+        }
         if (IsJumping && Input.GetKeyDown(KeyCode.Space))
-            {
-                IsJumping = false;
-            }
+        {
+            IsJumping = false;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D col)
