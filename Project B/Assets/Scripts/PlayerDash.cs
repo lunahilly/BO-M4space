@@ -9,8 +9,8 @@ public class PlayerDash : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     public float dashingPower = 12f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 1f;
+    public float dashingTime = 0.2f;
+    public float dashingCooldown = 1f;
 
     [SerializeField] private TrailRenderer trail;
 
