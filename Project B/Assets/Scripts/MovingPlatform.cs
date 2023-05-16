@@ -7,12 +7,11 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] GameObject[] waypoints;
     int currentWaypointIndex = 0;
     [SerializeField] float speed = 1f;
-    // Start is called before the first frame update
-    void Start()
+
+    void Update()
     {
         moving();
     }
-
     // Update is called once per frame
     public void moving()
     {
