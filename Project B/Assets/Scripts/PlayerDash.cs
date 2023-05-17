@@ -54,6 +54,7 @@ public class PlayerDash : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
 
         // Stop the trail and restore gravity
+        rb.velocity = Vector2.zero;
         trail.emitting = false;
         rb.gravityScale = originalGravity;
 
@@ -61,5 +62,7 @@ public class PlayerDash : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
         isDashing = false;
+
+        yield break;
     }
 }
