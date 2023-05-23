@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class NextLevel : MonoBehaviour
 {
     // Start is called before the first frame update
-    static int checkpoint = 0;
+    public static int checkpoint = 0;
     public string Scene;
 
     //checkpoint 1 == level 1

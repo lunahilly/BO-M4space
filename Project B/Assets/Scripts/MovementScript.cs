@@ -53,6 +53,7 @@ public class MovementScript : MonoBehaviour
             isJumping = false;
         }
     }
+    
 
     void OnCollisionEnter2D(Collision2D col)
     {
