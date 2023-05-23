@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ship-tutorial.unity
     guid: 23657690793353840965ca6ce8085f08
+  - enabled: 1
+    path: Assets/Scenes/Death.unity
+    guid: 8996b24cc5ca89f42aa45aec64d6c3d3
   m_configObjects: {}
