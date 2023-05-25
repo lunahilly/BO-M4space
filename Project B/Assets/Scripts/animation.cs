@@ -10,6 +10,9 @@ public class animation : MonoBehaviour
         
     }
 
+    //kijk prog les 3, doe de animaties op het lopen
+
+
     // Update is called once per frame
     void Update()
     {
