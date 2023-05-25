@@ -3994,6 +3994,10 @@ PrefabInstance:
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 1991298160759330073, guid: 3a24da4976e80634b88bacc41ad29032, type: 3}
+    - target: {fileID: 1755566484566080856, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
+      propertyPath: timeBetweenFiring
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1755566485765498088, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: heart1
       value: 
