@@ -25,6 +25,7 @@ public class Salsa : MonoBehaviour
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
+            DoorOpening.Enemy -= 1;
         }
     }
 }
