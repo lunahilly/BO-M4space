@@ -22,6 +22,11 @@ public class DeathCollide : MonoBehaviour
         {
             Lives -=1;
         }
+        if (col.gameObject.CompareTag("Lava"))    // Als de speler tegen een enemy botst
+        {
+            Destroy(Player);
+            SceneManager.LoadScene("Death");
+        }
     }
     private void Update()
     {
