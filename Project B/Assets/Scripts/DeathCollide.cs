@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class DeathCollide : MonoBehaviour
 {
-    public int Lives = 3;
+    public static int Lives = 3;
     public GameObject Player;
     public GameObject heart1;
     public GameObject heart2;
@@ -43,6 +43,7 @@ public class DeathCollide : MonoBehaviour
         if (Lives == 1)
         {
             Destroy(heart2);
+            Destroy(heart3);
         }
     }
 }

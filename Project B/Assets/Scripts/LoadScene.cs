@@ -15,6 +15,7 @@ public class LoadScene : MonoBehaviour
     {
         Debug.Log("button pressed");
         Debug.Log("Game loading...");
+        DeathCollide.Lives = 3;
         
 
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
