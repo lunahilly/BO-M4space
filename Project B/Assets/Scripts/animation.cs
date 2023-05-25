@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class animation : MonoBehaviour
 {
-    // Start is called before the first frame update
+    Animator m_Animator;
+
     void Start()
     {
-        
+        //Get the Animator attached to the GameObject you are intending to animate.
+        m_Animator = gameObject.GetComponent<Animator>();
     }
 
-    //kijk prog les 3, doe de animaties op het lopen
-
-
-    // Update is called once per frame
     void Update()
     {
-        
+        //Press the up arrow button to reset the trigger and set another one
+        if (Input.GetKey(KeyCode.A))
+        {
+            m_Animator.SetTrigger("AD");
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            m_Animator.SetTrigger("AD");
+        }
     }
 }
