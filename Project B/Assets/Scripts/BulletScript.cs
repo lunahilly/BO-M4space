@@ -8,6 +8,7 @@ public class BulletScript : MonoBehaviour
     private Camera mainCam;
     private Rigidbody2D rb;
     public float force;
+    public float TimeLeft = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        TimeLeft -= Time.deltaTime;
+        if (TimeLeft < 0)
+        {
+            Destroy(this);
+        }
     }
 }
