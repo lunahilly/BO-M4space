@@ -18,7 +18,7 @@ public class DeathCollide : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Enemy"))    // Als de speler tegen een PowerUp botst
+        if (col.gameObject.CompareTag("Enemy"))    // Als de speler tegen een enemy botst
         {
             Lives -=1;
         }
