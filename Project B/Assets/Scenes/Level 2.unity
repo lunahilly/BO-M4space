@@ -6306,5 +6306,9 @@ PrefabInstance:
       propertyPath: m_ColliderPaths.Array.data[0].m_ColliderPaths.Array.data[40].Array.data[3].Y
       value: -51200000
       objectReference: {fileID: 0}
+    - target: {fileID: 1673513113574489308, guid: 8e4ba98eeb9c8b949934ff8900af089f, type: 3}
+      propertyPath: m_Name
+      value: lava
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e4ba98eeb9c8b949934ff8900af089f, type: 3}
