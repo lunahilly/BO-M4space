@@ -28,9 +28,17 @@ public class BulletScript : MonoBehaviour
     void Update()
     {
         timer += 1.0F * Time.deltaTime;
-        if (timer >= 2)
+        if (timer >= 1)
         {
             GameObject.Destroy(gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(gameObject);
         }
     }
 }
