@@ -18,10 +18,22 @@ public class animation : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             m_Animator.SetTrigger("A");
+            Debug.Log("testA");
         }
         if (Input.GetKey(KeyCode.D))
         {
             m_Animator.SetTrigger("D");
+            Debug.Log("testD");
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            m_Animator.SetTrigger("idle");
+            Debug.Log("test");
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            m_Animator.SetTrigger("idle");
+            Debug.Log("test");
         }
         else
         {
