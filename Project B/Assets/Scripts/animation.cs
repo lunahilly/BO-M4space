@@ -17,11 +17,17 @@ public class animation : MonoBehaviour
         //Press the up arrow button to reset the trigger and set another one
         if (Input.GetKey(KeyCode.A))
         {
+            m_Animator.SetBool("Bool", false);
             m_Animator.SetTrigger("AD");
         }
         if (Input.GetKey(KeyCode.D))
         {
+            m_Animator.SetBool("Bool", false);
             m_Animator.SetTrigger("AD");
+        }
+        else
+        {
+            m_Animator.SetBool("Bool", true);
         }
     }
 }

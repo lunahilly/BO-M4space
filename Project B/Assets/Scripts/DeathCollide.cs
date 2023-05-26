@@ -27,6 +27,10 @@ public class DeathCollide : MonoBehaviour
             Destroy(Player);
             SceneManager.LoadScene("Death");
         }
+        if (col.gameObject.CompareTag("spikes"))    // Als de speler tegen een enemy botst
+        {
+            Lives -= 1;
+        }
     }
     private void Update()
     {

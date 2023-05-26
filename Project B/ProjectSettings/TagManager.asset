@@ -9,6 +9,8 @@ TagManager:
   - bullet
   - Lava
   - Door
+  - Guardian
+  - spikes
   layers:
   - Default
   - TransparentFX
