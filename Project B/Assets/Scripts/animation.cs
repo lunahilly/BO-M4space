@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class animation : MonoBehaviour
 {
-    Animator m_Animator;
+    public Animator m_Animator;
 
     void Start()
     {
@@ -17,17 +17,15 @@ public class animation : MonoBehaviour
         //Press the up arrow button to reset the trigger and set another one
         if (Input.GetKey(KeyCode.A))
         {
-            m_Animator.SetBool("Bool", false);
-            m_Animator.SetTrigger("AD");
+            m_Animator.SetTrigger("A");
         }
         if (Input.GetKey(KeyCode.D))
         {
-            m_Animator.SetBool("Bool", false);
-            m_Animator.SetTrigger("AD");
+            m_Animator.SetTrigger("D");
         }
         else
         {
-            m_Animator.SetBool("Bool", true);
+            m_Animator.SetTrigger("idle");
         }
     }
 }
