@@ -21,15 +21,6 @@ public class DoorOpening : MonoBehaviour
     {
         if (DoorOpening.Enemy == 0)
         {
-            //if (Vector3.Distance(transform.position, waypoints[currentWaypointIndex].transform.position) < 0.2f)
-            //{
-               // currentWaypointIndex++;
-               // if (currentWaypointIndex >= waypoints.Length)
-               // {
-              //      currentWaypointIndex = 0;
-               // }
-          //  }
-
             transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, speed * Time.deltaTime);
         }
     }

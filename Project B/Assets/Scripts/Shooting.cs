@@ -12,6 +12,7 @@ public class Shooting : MonoBehaviour
     private float timer;
     public float timeBetweenFiring;
     public AudioSource pew;
+    public static int Damage = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +30,10 @@ public class Shooting : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if(!canFire)
+        if (!canFire)
         {
             timer += Time.deltaTime;
-            if(timer > timeBetweenFiring)
+            if (timer > timeBetweenFiring)
             {
                 canFire = true;
                 timer = 0;
@@ -41,10 +42,11 @@ public class Shooting : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && canFire)
         {
-            canFire= false;
+            canFire = false;
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
             pew.Play();
         }
+
 
     }
 }
