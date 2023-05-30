@@ -35,9 +35,6 @@ public class animation : MonoBehaviour
             m_Animator.SetTrigger("idle");
             Debug.Log("test");
         }
-        else
-        {
-            m_Animator.SetTrigger("idle");
-        }
+
     }
 }
