@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6976472316315637800, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Stationary
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6976472316315637794, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
