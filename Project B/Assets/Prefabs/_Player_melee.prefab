@@ -40,7 +40,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1755566484566080859}
-  - component: {fileID: 6737432147633297621}
   - component: {fileID: 3488903710650789681}
   m_Layer: 0
   m_Name: RotatePoint
@@ -64,18 +63,6 @@ Transform:
   m_Father: {fileID: 1755566485765498092}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6737432147633297621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755566484566080858}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf52c816b312d34ca95a29c7ba77b2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &3488903710650789681
 SpriteRenderer:
   m_ObjectHideFlags: 0
