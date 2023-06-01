@@ -15,6 +15,7 @@ TagManager:
   - Chase
   - Goober
   - melee
+  - hit
   layers:
   - Default
   - TransparentFX
