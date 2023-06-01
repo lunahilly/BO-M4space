@@ -181,6 +181,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damping: 0
+--- !u!1 &131241879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2825050589568391240, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+  m_PrefabInstance: {fileID: 923738392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &131241882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131241879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d49a3b6de995d4bbba5050e55d36ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &197654020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1148,10 @@ PrefabInstance:
     - target: {fileID: 2825050589568391240, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
       propertyPath: m_Name
       value: Goober
+      objectReference: {fileID: 0}
+    - target: {fileID: 2825050589568391240, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2825050589568391243, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
       propertyPath: m_RootOrder
@@ -4468,6 +4490,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720270129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 409103000730560098, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+  m_PrefabInstance: {fileID: 2045910745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720270137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720270129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d49a3b6de995d4bbba5050e55d36ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1863814800 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1755566485765498099, guid: 907e7a5cca6c4e244a9f366e23ec3f5b, type: 3}
@@ -4485,6 +4525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a786d740ab3474b9bc95055f661501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 2108331649}
+  attackPoint: {fileID: 2108331650}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  attackRange: 0.25
+  attackDamage: 40
 --- !u!1 &2016767520
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,6 +4659,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 6483077379750876743, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8310482580851227270, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4660,6 +4711,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guardian
       objectReference: {fileID: 0}
+    - target: {fileID: 8310482580851227272, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8310482580851227271, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
@@ -4670,6 +4725,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8509684248507171378, guid: 907e7a5cca6c4e244a9f366e23ec3f5b, type: 3}
+      propertyPath: m_Animator
+      value: 
+      objectReference: {fileID: 2108331649}
     - target: {fileID: 1755566484566080858, guid: 907e7a5cca6c4e244a9f366e23ec3f5b, type: 3}
       propertyPath: m_Name
       value: Attackpoint
@@ -4761,6 +4820,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &2108331650 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1755566484566080859, guid: 907e7a5cca6c4e244a9f366e23ec3f5b, type: 3}
+  m_PrefabInstance: {fileID: 2108331647}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2108331652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108331648}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33a786d740ab3474b9bc95055f661501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 2108331649}
+  attackPoint: {fileID: 0}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 0.5
+  attackDamage: 40
 --- !u!1001 &4293387214980166675
 PrefabInstance:
   m_ObjectHideFlags: 0
