@@ -27,5 +27,21 @@ public class animation : MonoBehaviour
         {
             m_Animator.SetTrigger("Idle");
         }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_Animator.SetTrigger("jump");
+        }
+        if ((Input.GetKey(KeyCode.LeftShift)))
+        {
+            m_Animator.SetTrigger("dash");
+        }
+        if ((Input.GetKey(KeyCode.LeftShift)))
+        {
+            m_Animator.SetTrigger("dashL");
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_Animator.SetTrigger("jumpL");
+        }
     }
 }

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 3488903710650789681}
   m_Layer: 0
   m_Name: RotatePoint
-  m_TagString: Untagged
+  m_TagString: melee
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
