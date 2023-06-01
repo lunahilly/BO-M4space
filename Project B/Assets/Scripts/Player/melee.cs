@@ -26,4 +26,13 @@ public class melee : MonoBehaviour
             m_Animator.SetTrigger("idle");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            Goober enemy = collision.GetComponent<Goober>();
+            enemy.HandleHit(damage);
+        }
+    }
 }
