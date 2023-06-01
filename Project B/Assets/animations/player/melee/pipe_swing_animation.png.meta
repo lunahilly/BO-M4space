@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 65066f90a07d8434188a94fd0c30ba27
+guid: 166dbe6844830d8488d10c8a5d809076
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,127 +104,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: schipTile-Sheet_0
+      name: pipe_swing_animation_0
       rect:
         serializedVersion: 2
-        x: 58
-        y: 124
-        width: 9
-        height: 8
+        x: 20
+        y: 24
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4037f4597dc4a22448896581b1570141
-      internalID: 1950505276
+      spriteID: 3e080608a908e564eb42993931428e45
+      internalID: -1926292600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schipTile-Sheet_1
+      name: pipe_swing_animation_1
       rect:
         serializedVersion: 2
-        x: 70
-        y: 124
-        width: 10
-        height: 8
+        x: 84
+        y: 24
+        width: 29
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03fc6c3083e2bc340b6189d26c218ba1
-      internalID: -921397250
+      spriteID: 9be803dce19abbd4b8317c56d2c7e074
+      internalID: -1326351351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schipTile-Sheet_2
+      name: pipe_swing_animation_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 68
-        width: 61
-        height: 64
+        x: 148
+        y: 24
+        width: 7
+        height: 20
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc89dd5d00dff0045989eaff68e6a4ff
-      internalID: -2062810356
+      spriteID: 3a34db01f97971a4a878f8ba7e7da3f0
+      internalID: 740045229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schipTile-Sheet_3
+      name: pipe_swing_animation_3
       rect:
         serializedVersion: 2
-        x: 70
-        y: 68
-        width: 61
-        height: 64
+        x: 212
+        y: 24
+        width: 23
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1799f837a06efbc4fb689ca4124b6289
-      internalID: -6755515
+      spriteID: 62d126a6c59852b449226c0e5f2b600d
+      internalID: 643759091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schipTile-Sheet_4
+      name: pipe_swing_animation_4
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 64
-        height: 64
+        x: 276
+        y: 10
+        width: 22
+        height: 23
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f8cfbdd10fb7d64198865c846a18e84
-      internalID: 1431323367
+      spriteID: 8cf99eed94f083444aa16682f8260bb5
+      internalID: -153829574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: schipTile-Sheet_5
+      name: pipe_swing_animation_5
       rect:
         serializedVersion: 2
-        x: 70
-        y: 1
-        width: 64
-        height: 64
+        x: 340
+        y: 10
+        width: 13
+        height: 17
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140ba33848c7281419945f1b15178b11
-      internalID: 1028202245
+      spriteID: ebdb73adfe9429246a0f61d984e85188
+      internalID: -1872037697
       vertices: []
       indices: 
       edges: []
@@ -240,12 +240,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      schipTile-Sheet_3: -6755515
-      schipTile-Sheet_4: 1431323367
-      schipTile-Sheet_2: -2062810356
-      schipTile-Sheet_1: -921397250
-      schipTile-Sheet_0: 1950505276
-      schipTile-Sheet_5: 1028202245
+      pipe_swing_animation_0: -1926292600
+      pipe_swing_animation_5: -1872037697
+      pipe_swing_animation_3: 643759091
+      pipe_swing_animation_4: -153829574
+      pipe_swing_animation_1: -1326351351
+      pipe_swing_animation_2: 740045229
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
