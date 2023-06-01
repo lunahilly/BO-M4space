@@ -27,7 +27,7 @@ public class Goober : MonoBehaviour
 
     public void HandleHit(int damage)
     {
-        health -= melee.damage;
+        health -= damage;
         Debug.Log("test");
     }
 }
