@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3682803658817291423}
   - component: {fileID: 6671843096495722596}
+  - component: {fileID: 6281374876489267906}
   m_Layer: 0
   m_Name: Walking-goober-export
   m_TagString: Untagged
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &6281374876489267906
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63391118830869287}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eeb28c22ee7a1da48a8754ad7fe381b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2825050589568391240
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +397,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.1885499
       objectReference: {fileID: 0}
+    - target: {fileID: 6976472316315637796, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976472316315637796, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 6281374876489267906}
     - target: {fileID: 6976472316315637796, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
       propertyPath: waypoints.Array.data[0]
       value: 

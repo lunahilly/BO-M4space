@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingAI : MonoBehaviour
+public class platform : MonoBehaviour
 {
     [SerializeField] GameObject[] waypoints;
     int currentWaypointIndex = 0;
     [SerializeField] float speed = 1f;
-    [SerializeField] Animator animator;
 
     void Update()
     {
@@ -24,15 +23,6 @@ public class MovingAI : MonoBehaviour
                 currentWaypointIndex = 0;
             }
         }
-        if (currentWaypointIndex == 0) 
-        {
-            animator.SetTrigger("left");
-        }
-        if (currentWaypointIndex == 1)
-        {
-            animator.SetTrigger("right");
-        }
-
 
         transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypointIndex].transform.position, speed * Time.deltaTime);
     }
