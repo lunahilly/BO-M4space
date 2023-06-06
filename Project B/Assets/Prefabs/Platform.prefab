@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 4293387214537204203}
   - component: {fileID: 4293387214537204196}
   - component: {fileID: 4293387214537204201}
+  - component: {fileID: 1683275431198104066}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Ground
@@ -211,7 +212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4293387214537204197}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 482446db4a342674887d476ce2c0b5b4, type: 3}
   m_Name: 
@@ -220,6 +221,7 @@ MonoBehaviour:
   - {fileID: 4293387215350573215}
   - {fileID: 4293387214236035025}
   speed: 1
+  animator: {fileID: 0}
 --- !u!61 &4293387214537204201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -246,6 +248,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.73}
   m_EdgeRadius: 0
+--- !u!114 &1683275431198104066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293387214537204197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0aed19033528d5469802f00815e57be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 4293387215350573215}
+  - {fileID: 4293387214236035025}
+  speed: 1
 --- !u!1 &4293387215350573215
 GameObject:
   m_ObjectHideFlags: 0
