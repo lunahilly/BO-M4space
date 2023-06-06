@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6483077379750876743}
   - component: {fileID: 1463284287942124043}
   - component: {fileID: 249680140644275536}
+  - component: {fileID: 2311613564151222949}
   m_Layer: 0
   m_Name: Lion-sprite
   m_TagString: Untagged
@@ -132,11 +133,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409103000730560098}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bac2a95931e57fe4da6f631931d5ab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  death: {fileID: 0}
   play: {fileID: 1463284287942124043}
 --- !u!82 &1463284287942124043
 AudioSource:
@@ -260,6 +262,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1, y: 0.64}
   m_EdgeRadius: 0
+--- !u!114 &2311613564151222949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409103000730560098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e86c880e90fbfb46b463fd8f2ede135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  death: {fileID: 1463284287942124043}
 --- !u!1 &2374541354210186729
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,14 +6,14 @@ public class Chase : MonoBehaviour
 {
     private int health = 60;
     [SerializeField] AudioSource play;
+    [SerializeField] AudioSource death;
 
     void Update()
     {
         if (health <= 0 || health == 0)
         {
-            play.Play();
+            death.Play();
             Destroy(gameObject);
-            DoorOpening.Enemy -= 1;
         }
     }
 
@@ -22,10 +22,12 @@ public class Chase : MonoBehaviour
         if (col.gameObject.CompareTag("bullet"))
         {
             health -= Shooting.Damage;
+            play.Play();
         }
         if (col.gameObject.CompareTag("melee"))
         {
             health -= melee.damage;
+            play.Play();
         }
     }
 }

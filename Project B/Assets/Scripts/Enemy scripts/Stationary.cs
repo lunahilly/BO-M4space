@@ -7,12 +7,13 @@ public class Stationary : MonoBehaviour
     // Start is called before the first frame update
     private int health = 20;
     [SerializeField] AudioSource play;
+    [SerializeField] AudioSource death;
 
     void Update()
     {
         if (health <= 0 || health == 0)
         {
-            play.Play();
+            death.Play();
             Destroy(gameObject);
             DoorOpening.Enemy -= 1;
         }
@@ -23,10 +24,12 @@ public class Stationary : MonoBehaviour
         if (col.gameObject.CompareTag("bullet"))
         {
             health -= Shooting.Damage;
+            play.Play();
         }
         if (col.gameObject.CompareTag("melee"))
         {
             health -= melee.damage;
+            play.Play();
         }
     }
 }

@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Goober : MonoBehaviour
 {
-    private int health = 40;
-    [SerializeField] AudioSource play;
+    [SerializeField] int health;
+    [SerializeField] AudioSource death;
 
     void Update()
     {
         if (health <= 0 || health == 0)
         {
-            play.Play();
+            death.Play();
             Destroy(gameObject);
             DoorOpening.Enemy -= 1;
         }

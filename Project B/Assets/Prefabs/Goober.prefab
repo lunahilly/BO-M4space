@@ -498,4 +498,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e86c880e90fbfb46b463fd8f2ede135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  play: {fileID: -9058867596908391780}
+  health: 40
+  death: {fileID: -9058867596908391780}

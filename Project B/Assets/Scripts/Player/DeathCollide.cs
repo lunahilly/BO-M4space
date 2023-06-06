@@ -10,6 +10,8 @@ public class DeathCollide : MonoBehaviour
     public GameObject heart1;
     public GameObject heart2;
     public GameObject heart3;
+    [SerializeField] AudioSource hit;
+    [SerializeField] AudioSource death;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,15 +41,18 @@ public class DeathCollide : MonoBehaviour
             Destroy(heart1);
             Destroy(Player);
             SceneManager.LoadScene("Death");
+            death.Play();
         }
         if (Lives == 2)
         {
             Destroy(heart3);
+            hit.Play();
         }
         if (Lives == 1)
         {
             Destroy(heart2);
             Destroy(heart3);
+            hit.Play();
         }
     }
 }
