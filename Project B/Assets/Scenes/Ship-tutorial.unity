@@ -5202,6 +5202,10 @@ PrefabInstance:
       propertyPath: heart3
       value: 
       objectReference: {fileID: 389461508}
+    - target: {fileID: 1013077101543430993, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
+      propertyPath: Scene
+      value: Level 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1013077101543431020, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.51
