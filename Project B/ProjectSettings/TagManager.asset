@@ -16,6 +16,7 @@ TagManager:
   - Goober
   - melee
   - hit
+  - Wall
   layers:
   - Default
   - TransparentFX
