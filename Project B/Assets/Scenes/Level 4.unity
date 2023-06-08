@@ -14356,11 +14356,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 771279908049464490, guid: ee7529ea2d9365b49961a83a04015a5e, type: 3}
       propertyPath: m_Name
-      value: Stationary
+      value: chase
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 91945486800036859, guid: ee7529ea2d9365b49961a83a04015a5e, type: 3}
-    - {fileID: 6426215715211724768, guid: ee7529ea2d9365b49961a83a04015a5e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ee7529ea2d9365b49961a83a04015a5e, type: 3}
 --- !u!1001 &1172570500
 PrefabInstance:
@@ -14423,6 +14422,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+--- !u!1 &1485100020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1755566485765498099, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
+  m_PrefabInstance: {fileID: 1511587304}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1490743727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14537,7 +14541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1755566485765498099, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: m_Name
-      value: _Player_
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
@@ -14931,5 +14935,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f435c86630d5934f8cf6a7d97700a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotationSpeed: 3
+  player: {fileID: 1485100020}
+  speed: 5

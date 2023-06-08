@@ -4,33 +4,17 @@ using UnityEngine;
 
 public class Chase : MonoBehaviour
 {
-    Transform target;
-    Transform enemyTransform;
-    public float speed = 3f;
-    public float rotationSpeed = 3f;
+    [SerializeField] GameObject player;
+    [SerializeField] private float speed = 5f;
 
-
-    void Start()
+    private void Update()
     {
-        //obtain the game object Transform
-        enemyTransform = this.GetComponent<Transform>();
-    }
-
-    void Update()
-    {
-
-        target = GameObject.FindWithTag("Player").transform;
-        Vector3 targetHeading = target.position - transform.position;
-        Vector3 targetDirection = targetHeading.normalized;
-
-        //rotate to look at the player
-
-        transform.rotation = Quaternion.LookRotation(targetDirection); // Converts target direction vector to Quaternion
+        Vector2 distance = player.transform.position - this.transform.position;
+        Vector3 direction = distance.normalized;
 
 
-        //move towards the player
-        enemyTransform.position += enemyTransform.forward * speed * Time.deltaTime;
-
+        transform.position += direction * speed * Time.deltaTime;
+        //transform.LookAt(player.transform.position);
     }
 
 }
