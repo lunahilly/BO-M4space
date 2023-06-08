@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class Chase : MonoBehaviour
 {
-    public Transform target;//set target from inspector instead of looking in Update
+    Transform target;
+    Transform enemyTransform;
     public float speed = 3f;
+    public float rotationSpeed = 3f;
 
 
     void Start()
     {
-
+        //obtain the game object Transform
+        enemyTransform = this.GetComponent<Transform>();
     }
 
     void Update()
     {
 
+        target = GameObject.FindWithTag("Player").transform;
+        Vector3 targetHeading = target.position - transform.position;
+        Vector3 targetDirection = targetHeading.normalized;
+
         //rotate to look at the player
-        transform.LookAt(target.position);
-        transform.Rotate(new Vector3(0, -90, 0), Space.Self);//correcting the original rotation
+
+        transform.rotation = Quaternion.LookRotation(targetDirection); // Converts target direction vector to Quaternion
 
 
         //move towards the player
-        if (Vector3.Distance(transform.position, target.position) > 1f)
-        {//move if distance from target is greater than 1
-            transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
-        }
+        enemyTransform.position += enemyTransform.forward * speed * Time.deltaTime;
 
     }
 
