@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class Chase : MonoBehaviour
 {
-    private int health = 60;
-    [SerializeField] AudioSource play;
-    [SerializeField] AudioSource death;
+    public Transform target;//set target from inspector instead of looking in Update
+    public float speed = 3f;
+
+
+    void Start()
+    {
+
+    }
 
     void Update()
     {
-        if (health <= 0 || health == 0)
-        {
-            death.Play();
-            Destroy(gameObject);
+
+        //rotate to look at the player
+        transform.LookAt(target.position);
+        transform.Rotate(new Vector3(0, -90, 0), Space.Self);//correcting the original rotation
+
+
+        //move towards the player
+        if (Vector3.Distance(transform.position, target.position) > 1f)
+        {//move if distance from target is greater than 1
+            transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
         }
+
     }
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("bullet"))
-        {
-            health -= Shooting.Damage;
-            play.Play();
-        }
-        if (col.gameObject.CompareTag("melee"))
-        {
-            health -= melee.damage;
-            play.Play();
-        }
-    }
 }
+
