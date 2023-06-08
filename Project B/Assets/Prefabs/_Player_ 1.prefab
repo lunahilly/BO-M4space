@@ -40,10 +40,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206767060118712649}
-  - component: {fileID: 206767060118712650}
   - component: {fileID: 6799749429911695434}
+  - component: {fileID: 3997156371239874110}
   m_Layer: 0
-  m_Name: RotatePoint
+  m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,23 +65,6 @@ Transform:
   m_Father: {fileID: 206767061402577150}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &206767060118712650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 206767060118712648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb66fd34e2907cb43a2ecfa7e2dc1c27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 1991298160759330073, guid: 3a24da4976e80634b88bacc41ad29032, type: 3}
-  bulletTransform: {fileID: 7595612729492094212}
-  canFire: 1
-  timeBetweenFiring: 0.3
-  pew: {fileID: 6799749429911695434}
 --- !u!82 &6799749429911695434
 AudioSource:
   m_ObjectHideFlags: 0
@@ -178,6 +161,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3997156371239874110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206767060118712648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6049ecbcecc01994caac11f6664e3b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 1991298160759330073, guid: 3a24da4976e80634b88bacc41ad29032, type: 3}
+  firePoint: {fileID: 7595612729492094212}
+  fireForce: 20
+  currentClip: 0
+  maxClipSize: 5
+  currentAmmo: 0
+  maxAmmoSize: 20
 --- !u!1 &206767061402577121
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +201,7 @@ GameObject:
   - component: {fileID: 5040199732333293508}
   - component: {fileID: 5961173944475183527}
   - component: {fileID: 5145444948814820689}
+  - component: {fileID: 7781465075943322730}
   m_Layer: 0
   m_Name: _Player_ 1
   m_TagString: Player
@@ -700,6 +703,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7781465075943322730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206767061402577121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d425aa101bc74499d4b6b49f7f69da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 3997156371239874110}
 --- !u!1 &619257374782429498
 GameObject:
   m_ObjectHideFlags: 0

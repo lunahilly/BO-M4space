@@ -46,7 +46,5 @@ public class Shooting : MonoBehaviour
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
             pew.Play();
         }
-
-
     }
 }
