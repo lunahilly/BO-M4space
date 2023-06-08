@@ -14537,7 +14537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1755566485765498099, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: m_Name
-      value: _Player_
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
@@ -14931,5 +14931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f435c86630d5934f8cf6a7d97700a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotationSpeed: 3
+  health: 0
+  death: {fileID: 0}
+  moveSpeed: 5
