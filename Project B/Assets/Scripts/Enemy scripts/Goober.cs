@@ -6,6 +6,8 @@ public class Goober : MonoBehaviour
 {
     [SerializeField] int health;
     [SerializeField] AudioSource death;
+    public float hittime;
+    public SpriteRenderer rend;
 
     void Update()
     {
@@ -22,6 +24,7 @@ public class Goober : MonoBehaviour
         if (col.gameObject.CompareTag("bullet"))
         {
             health -= Shooting.Damage;
+            wait();
         }
     }
 
@@ -29,5 +32,18 @@ public class Goober : MonoBehaviour
     {
         health -= damage;
         Debug.Log("test");
+        wait();
+    }
+
+    private IEnumerator Hit(float time)
+    {
+        rend.color = Color.red;
+        yield return new WaitForSeconds(time);
+        rend.color = Color.white;
+    }
+
+    public void wait()
+    {
+        StartCoroutine(Hit(hittime));
     }
 }

@@ -12,7 +12,9 @@ public class DeathCollide : MonoBehaviour
     public GameObject heart3;
     [SerializeField] AudioSource hit;
     [SerializeField] AudioSource death;
-    // Start is called before the first frame update
+
+    public SpriteRenderer rend;
+    public float hittime;    // Start is called before the first frame update
     void Start()
     {
 
@@ -22,6 +24,7 @@ public class DeathCollide : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Enemy"))    // Als de speler tegen een enemy botst
         {
+            wait();
             Lives -=1;
         }
         if (col.gameObject.CompareTag("Lava"))    // Als de speler tegen een enemy botst
@@ -32,6 +35,7 @@ public class DeathCollide : MonoBehaviour
         if (col.gameObject.CompareTag("spikes"))    // Als de speler tegen een enemy botst
         {
             Lives -= 1;
+            wait();
         }
     }
     private void Update()
@@ -54,5 +58,16 @@ public class DeathCollide : MonoBehaviour
             Destroy(heart3);
             hit.Play();
         }
+    }
+
+    private IEnumerator Hit(float time)
+    {
+        rend.color = Color.red;
+        yield return new WaitForSeconds(time);
+        rend.color = Color.white;
+    }
+    public void wait()
+    {
+        StartCoroutine(Hit(hittime));
     }
 }

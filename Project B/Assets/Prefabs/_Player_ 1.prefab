@@ -465,6 +465,7 @@ MonoBehaviour:
   heart3: {fileID: 0}
   hit: {fileID: 5961173944475183527}
   death: {fileID: 5145444948814820689}
+  hittime: 0.1
 --- !u!114 &6668064058096259768
 MonoBehaviour:
   m_ObjectHideFlags: 0

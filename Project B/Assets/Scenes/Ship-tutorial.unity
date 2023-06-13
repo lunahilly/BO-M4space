@@ -392,6 +392,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!212 &102623771 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1013077101543430998, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
+  m_PrefabInstance: {fileID: 1013077102901302769}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &197654020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1618,9 +1623,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8777457435509836360, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+      propertyPath: rend
+      value: 
+      objectReference: {fileID: 1976992437}
+    - target: {fileID: 8777457435509836360, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
       propertyPath: death
       value: 
       objectReference: {fileID: 1253454254}
+    - target: {fileID: 8777457435509836360, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+      propertyPath: hittime
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -9058867596908391780, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
@@ -5332,6 +5345,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1976992437 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6671843096495722596, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+  m_PrefabInstance: {fileID: 923738392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2016767520
 GameObject:
   m_ObjectHideFlags: 0
@@ -5581,6 +5599,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 102623760}
     - target: {fileID: 1013077101543430992, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
+      propertyPath: rend
+      value: 
+      objectReference: {fileID: 102623771}
+    - target: {fileID: 1013077101543430992, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
       propertyPath: death
       value: 
       objectReference: {fileID: 102623759}
@@ -5596,6 +5618,10 @@ PrefabInstance:
       propertyPath: heart3
       value: 
       objectReference: {fileID: 389461508}
+    - target: {fileID: 1013077101543430992, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
+      propertyPath: hittime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1013077101543430993, guid: eaed108f49a789948ab6bb20e507130f, type: 3}
       propertyPath: Scene
       value: Level 1

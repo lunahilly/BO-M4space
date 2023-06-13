@@ -276,6 +276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   death: {fileID: 1463284287942124043}
+  hittime: 0
+  rend: {fileID: 4666828500108815815}
 --- !u!1 &2374541354210186729
 GameObject:
   m_ObjectHideFlags: 0

@@ -2113,6 +2113,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2311613564151222949, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: hittime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8310482580851227270, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9451,6 +9455,10 @@ PrefabInstance:
       value: _Player_
       objectReference: {fileID: 0}
     - target: {fileID: 206767061402577146, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
+      propertyPath: rend
+      value: 
+      objectReference: {fileID: 1910533263250329203}
+    - target: {fileID: 206767061402577146, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
       propertyPath: heart1
       value: 
       objectReference: {fileID: 1587345003}
@@ -9508,6 +9516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
+--- !u!212 &1910533263250329203 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 206767061402577149, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
+  m_PrefabInstance: {fileID: 1910533263250329202}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5841818778274531016
 PrefabInstance:
   m_ObjectHideFlags: 0

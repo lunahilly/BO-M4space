@@ -500,3 +500,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   death: {fileID: -9058867596908391780}
+  hittime: 0
+  rend: {fileID: 6671843096495722596}
