@@ -6,14 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public Weapon weapon;
 
-    Vector2 moveDirection;
-    Vector2 mousePosition;
-
     // Update is called once per frame
     void Update()
     {
+        float moveX = Input.GetAxisRaw("Horizontal");
+        float moveY = Input.GetAxisRaw("Vertical");
 
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             weapon.Fire();
         }
