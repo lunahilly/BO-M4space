@@ -1033,6 +1033,10 @@ PrefabInstance:
       value: _Player_ 1
       objectReference: {fileID: 0}
     - target: {fileID: 206767061402577146, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
+      propertyPath: rend
+      value: 
+      objectReference: {fileID: 1791086334}
+    - target: {fileID: 206767061402577146, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
       propertyPath: heart1
       value: 
       objectReference: {fileID: 1557773146}
@@ -1107,6 +1111,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 206767061402577121, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
   m_PrefabInstance: {fileID: 1791086320}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &1791086334 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 206767061402577149, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
+  m_PrefabInstance: {fileID: 1791086320}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1839238050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1124,7 +1133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.426
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1326,7 +1335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.495
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1359,6 +1368,10 @@ PrefabInstance:
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6209063955075495693, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
+      propertyPath: MinDistance
+      value: 1.0295218
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495694, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_Name
@@ -11261,7 +11274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.059
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495688, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_LocalPosition.z
