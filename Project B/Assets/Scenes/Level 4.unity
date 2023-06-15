@@ -273,16 +273,6 @@ Transform:
   m_Father: {fileID: 1713440318}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &301083891 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6021224581921241810, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
-  m_PrefabInstance: {fileID: 754256572}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &357983387 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8340946280701978831, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
-  m_PrefabInstance: {fileID: 754256572}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &390509381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22317,6 +22307,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
+--- !u!1 &754256573 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9089953413511997895, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
+  m_PrefabInstance: {fileID: 754256572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &754256574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5322271200009560876, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
+  m_PrefabInstance: {fileID: 754256572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &754256575 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7685339585859088848, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
+  m_PrefabInstance: {fileID: 754256572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &811858287
 GameObject:
   m_ObjectHideFlags: 0
@@ -22624,11 +22629,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5855481009444736497, guid: 5dd24ca497db5954189bae200af66ac7, type: 3}
   m_PrefabInstance: {fileID: 872195697}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &890728335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8935715721826238797, guid: 2dc68f4f1cd2a1646bd30ae31256b5bc, type: 3}
-  m_PrefabInstance: {fileID: 754256572}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1017413571
 PrefabInstance:
@@ -22987,15 +22987,15 @@ PrefabInstance:
     - target: {fileID: 1755566485765498088, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: heart1
       value: 
-      objectReference: {fileID: 357983387}
+      objectReference: {fileID: 754256575}
     - target: {fileID: 1755566485765498088, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: heart2
       value: 
-      objectReference: {fileID: 301083891}
+      objectReference: {fileID: 754256574}
     - target: {fileID: 1755566485765498088, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: heart3
       value: 
-      objectReference: {fileID: 890728335}
+      objectReference: {fileID: 754256573}
     - target: {fileID: 1755566485765498092, guid: 1454bc42acf97ec48b950c920ebe5c31, type: 3}
       propertyPath: m_RootOrder
       value: 0
