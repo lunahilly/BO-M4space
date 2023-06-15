@@ -4975,6 +4975,14 @@ PrefabInstance:
       propertyPath: hittime
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 6483077379750876743, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 478866212}
+    - target: {fileID: 6483077379750876743, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8310482580851227268, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_Enabled
       value: 0

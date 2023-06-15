@@ -7,32 +7,27 @@ public class Guardian : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    private int health = 100;
-    [SerializeField] AudioSource death;
-    [SerializeField] AudioSource play
-        ;
+    public GameObject player;
+    public GameObject homepoint;
+    public float speed = 5f;
 
     void Update()
     {
-        if (health <= 0 || health == 0)
+        if (Vector3.Distance(transform.position, homepoint.transform.position) > 6f)
         {
-            death.Play();
-            Destroy(gameObject);
-            DoorOpening.Enemy -= 1;
-        }
-    }
+            Vector2 distance = homepoint.transform.position - this.transform.position;
+            Vector3 direction = distance.normalized;
 
-    void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("bullet"))
-        {
-            health -= Shooting.Damage;
-            play.Play();
+
+            transform.position = Vector3.MoveTowards(transform.position, homepoint.transform.position, speed * Time.deltaTime);
         }
-        if (col.gameObject.CompareTag("melee"))
+        else if (Vector3.Distance(transform.position, player.transform.position) < 4f)
         {
-            health -= melee.damage;
-            play.Play();
+            Vector2 distance = player.transform.position - this.transform.position;
+            Vector3 direction = distance.normalized;
+
+
+            transform.position += direction * speed * Time.deltaTime;
         }
     }
 }
