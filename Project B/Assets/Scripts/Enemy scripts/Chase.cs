@@ -9,6 +9,7 @@ public class Chase : MonoBehaviour
 
     private void Update()
     {
+
         Vector2 distance = player.transform.position - this.transform.position;
         Vector3 direction = distance.normalized;
 
