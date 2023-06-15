@@ -1087,6 +1087,10 @@ PrefabInstance:
       propertyPath: hittime
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8777457435509836360, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -9058867596908391780, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e0f2bb1d36ad61943a91061342bafa44, type: 3}
@@ -1102,7 +1106,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923738393}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f11749fb2b5600344a771d9755c843c1, type: 3}
@@ -5161,6 +5165,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4567444084642454431, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4567444084642454431, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7003230086106164610, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
       propertyPath: m_Name
       value: player switch test
@@ -5208,6 +5220,18 @@ PrefabInstance:
     - target: {fileID: 7003230086106164637, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749789023347728422, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749789023347728422, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8749789023347728422, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5f9dadad0483bc4fa04b971a025ec1e, type: 3}
