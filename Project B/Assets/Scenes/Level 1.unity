@@ -513,6 +513,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Guardian
       objectReference: {fileID: 0}
+    - target: {fileID: 2311613564151222949, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: hittime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6483077379750876743, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: play
       value: 
