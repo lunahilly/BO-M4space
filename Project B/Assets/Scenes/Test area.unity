@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2dbd5be1e6469d40a23823c46b58c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedItemPrefab: {fileID: 2892170839690976712, guid: 27d4bb7b233961c4bb2c2d17ab39c751, type: 3}
+  droppedItemPrefab: {fileID: 6097731859546081858, guid: f281386047b258c4c8100158e024f182, type: 3}
   lootList:
   - {fileID: 11400000, guid: 47c36f8024293b0468bc5c4e603de3d5, type: 2}
 --- !u!1 &945414205
