@@ -13,15 +13,7 @@ public class Guardian : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, homepoint.transform.position) > 6f)
-        {
-            Vector2 distance = homepoint.transform.position - this.transform.position;
-            Vector3 direction = distance.normalized;
-
-
-            transform.position = Vector3.MoveTowards(transform.position, homepoint.transform.position, speed * Time.deltaTime);
-        }
-        else if (Vector3.Distance(transform.position, player.transform.position) < 4f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 4f && Vector3.Distance(player.transform.position, homepoint.transform.position) < 6f)
         {
             Vector2 distance = player.transform.position - this.transform.position;
             Vector3 direction = distance.normalized;
@@ -29,5 +21,15 @@ public class Guardian : MonoBehaviour
 
             transform.position += direction * speed * Time.deltaTime;
         }
+        else if (Vector3.Distance(transform.position, player.transform.position) > 4f && Vector3.Distance(transform.position, homepoint.transform.position) < 6f && Vector3.Distance(transform.position, homepoint.transform.position) > 0.5f)
+        {
+                Vector2 distance = homepoint.transform.position - this.transform.position;
+                Vector3 direction = distance.normalized;
+
+
+                //transform.position = Vector3.MoveTowards(transform.position, homepoint.transform.position, speed * Time.deltaTime);
+                transform.position += direction * speed * Time.deltaTime;
+        }
+        
     }
 }
