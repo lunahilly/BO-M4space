@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5072129780373110845}
   - component: {fileID: 3966083684110825282}
   - component: {fileID: 4055296930827998630}
+  - component: {fileID: 6438368101321197148}
   m_Layer: 0
   m_Name: AmmoPickup
   m_TagString: Untagged
@@ -124,3 +125,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.50726604, y: 0.40373516}
   m_EdgeRadius: 0
+--- !u!50 &6438368101321197148
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6097731859546081858}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 50
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
