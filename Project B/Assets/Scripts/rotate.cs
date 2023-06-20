@@ -2,47 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class melee : MonoBehaviour
+public class rotate : MonoBehaviour
 {
+
     [SerializeField] float rotationSpeed = 100f;
     [SerializeField] Transform rotatePoint;
     private Camera mainCam;
     private Vector3 mousePos;
 
-    public static int damage = 15;
-    public Animator m_Animator;
-
     // Start is called before the first frame update
     void Start()
     {
-        //Get the Animator attached to the GameObject you are intending to animate.
-        m_Animator = gameObject.GetComponent<Animator>();
-
         mainCam = Camera.main;
     }
 
+    // Update is called once per frame
     void Update()
     {
-        //Press the up arrow button to reset the trigger and set another one
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            m_Animator.SetTrigger("click");
-        }
-        if (!Input.anyKey)
-        {
-            m_Animator.SetTrigger("idle");
-        }
-
         RotateWithMouse();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            Goober enemy = collision.GetComponent<Goober>();
-            enemy.HandleHit(damage);
-        }
     }
 
     private void RotateWithMouse()
