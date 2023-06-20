@@ -511,7 +511,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 409103000730560098, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_TagString
-      value: Guardian
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 2311613564151222949, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: hittime
