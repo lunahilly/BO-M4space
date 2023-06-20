@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1791086321}
+    - target: {fileID: 7246611781545016005, guid: 4a5d43945caf6bc4394c4f0c5803e17a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7246611781545016007, guid: 4a5d43945caf6bc4394c4f0c5803e17a, type: 3}
       propertyPath: m_Name
       value: Chase 1
@@ -513,6 +517,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1366869046224622914, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2311613564151222949, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: hittime
       value: 0.1
@@ -539,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8310482580851227270, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.787571
+      value: -4.83
       objectReference: {fileID: 0}
     - target: {fileID: 8310482580851227270, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: m_LocalPosition.z

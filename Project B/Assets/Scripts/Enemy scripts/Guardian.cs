@@ -21,7 +21,7 @@ public class Guardian : MonoBehaviour
 
             transform.position += direction * speed * Time.deltaTime;
         }
-        else if (Vector3.Distance(transform.position, player.transform.position) > 4f && Vector3.Distance(transform.position, homepoint.transform.position) < 6f && Vector3.Distance(transform.position, homepoint.transform.position) > 0f)
+        else if (Vector3.Distance(transform.position, player.transform.position) > 4f && Vector3.Distance(transform.position, homepoint.transform.position) < 6f && Vector3.Distance(transform.position, homepoint.transform.position) > 0.5f)
         {
                 Vector2 distance = homepoint.transform.position - this.transform.position;
                 Vector3 direction = distance.normalized;
