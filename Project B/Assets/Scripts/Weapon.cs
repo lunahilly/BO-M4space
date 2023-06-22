@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] Transform firePoint;
     [SerializeField] float fireForce = 20f;
     [SerializeField] float rotationSpeed = 100f;
-    [SerializeField] float timeBetweenFiring = 0.5f;
+    //[SerializeField] float timeBetweenFiring = 0.5f;
     public static int Damage = 20;
     public int currentClip, maxClipSize = 5, currentAmmo, maxAmmoSize = 20;
 
