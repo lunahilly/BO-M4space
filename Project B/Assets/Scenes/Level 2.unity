@@ -187,7 +187,7 @@ PrefabInstance:
       objectReference: {fileID: 1587345001}
     - target: {fileID: 1739401236041981813, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1739401236041981813, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2451,6 +2451,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209063955075495693, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495694, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_Name
       value: LIL baby (2)
@@ -2541,7 +2545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4293387214462602916, guid: b283bc97524817b4a828b3b7ee21ea37, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4293387214462602916, guid: b283bc97524817b4a828b3b7ee21ea37, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2841,6 +2845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1238223712}
     m_Modifications:
+    - target: {fileID: 1463284287942124043, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2311613564151222949, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
       propertyPath: hittime
       value: 0.1
@@ -3257,6 +3265,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209063955075495693, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6209063955075495694, guid: 78fd876d8227c3747b1bc0d8e7a8d377, type: 3}
       propertyPath: m_Name
       value: LIL baby (1)
@@ -3459,7 +3471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1673513112386174686, guid: 8e4ba98eeb9c8b949934ff8900af089f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1673513112386174686, guid: 8e4ba98eeb9c8b949934ff8900af089f, type: 3}
       propertyPath: m_LocalPosition.x
