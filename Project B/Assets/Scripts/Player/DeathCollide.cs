@@ -45,7 +45,6 @@ public class DeathCollide : MonoBehaviour
             Destroy(heart1);
             Destroy(Player);
             SceneManager.LoadScene("Death");
-            death.Play();
         }
         if (Lives == 2)
         {

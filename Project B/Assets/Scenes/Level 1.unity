@@ -557,6 +557,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7246611781545016003, guid: 4a5d43945caf6bc4394c4f0c5803e17a, type: 3}
   m_PrefabInstance: {fileID: 699929143}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &699929145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7246611781545016007, guid: 4a5d43945caf6bc4394c4f0c5803e17a, type: 3}
+  m_PrefabInstance: {fileID: 699929143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &699929146
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699929145}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1001 &811873420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -627,6 +653,10 @@ PrefabInstance:
     - target: {fileID: 1739401236041981813, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5076882035967927603, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}
+      propertyPath: Scene
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}

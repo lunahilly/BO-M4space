@@ -7,6 +7,11 @@ public class WeaponSwitching : MonoBehaviour
 
     private bool isMeleeActive = true;
 
+    private void Start()
+    {
+        gunWeapon.SetActive(false);
+    }
+
     private void Update()
     {
         // Check for the "E" key press
