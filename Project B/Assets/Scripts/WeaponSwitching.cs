@@ -5,7 +5,7 @@ public class WeaponSwitching : MonoBehaviour
     public GameObject meleeWeapon;
     public GameObject gunWeapon;
 
-    private bool isMeleeActive = true;
+    public static bool isMeleeActive = true;
 
     private void Start()
     {

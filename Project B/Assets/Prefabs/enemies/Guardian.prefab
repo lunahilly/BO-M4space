@@ -130,7 +130,7 @@ MonoBehaviour:
   death: {fileID: 1463284287942124043}
   hittime: 0.1
   rend: {fileID: 4666828500108815815}
-  itemPrefab: {fileID: 6097731859546081858, guid: f281386047b258c4c8100158e024f182, type: 3}
+  itemPrefab: {fileID: 2154792201315526768, guid: eb64c75b46f076944a40d38b5dabe602, type: 3}
 --- !u!82 &1463284287942124043
 AudioSource:
   m_ObjectHideFlags: 0
