@@ -49,5 +49,9 @@ public class WeaponSwitching : MonoBehaviour
         meleeWeapon.SetActive(true);
 
         isMeleeActive = true;
+        if (isMeleeActive == true)
+        {
+            //canFire = false;
+        }
     }
 }
