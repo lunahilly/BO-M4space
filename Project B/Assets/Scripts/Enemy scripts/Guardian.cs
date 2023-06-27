@@ -20,7 +20,7 @@ public class Guardian : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 4f && Vector3.Distance(player.transform.position, homepoint.transform.position) < 6f)
+        if (Vector3.Distance(transform.position, player.transform.position) < 4f && Vector3.Distance(player.transform.position, homepoint.transform.position) < 6f && DeathCollide.playerAlive == true)
         {
             Vector2 distance = player.transform.position - this.transform.position;
             Vector3 direction = distance.normalized;
