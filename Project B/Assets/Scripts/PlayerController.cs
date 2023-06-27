@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetMouseButtonDown(0) && WeaponSwitching.isMeleeActive == false)
+        if (Input.GetMouseButtonDown(0))
         {
             weapon.Fire();
         }
