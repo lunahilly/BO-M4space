@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     //[SerializeField] float timeBetweenFiring = 0.5f;
     public static int Damage = 20;
     public int currentClip, maxClipSize = 5, currentAmmo, maxAmmoSize = 20;
+    public static bool fire;
 
     private Camera mainCam;
     private Vector3 mousePos;
