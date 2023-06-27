@@ -123,9 +123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bac2a95931e57fe4da6f631931d5ab91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1739401236041981802, guid: da767a27b0ed5714f9c1e31c12f7d892, type: 3}
+  player: {fileID: 206767061402577121, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
   homepoint: {fileID: 1267179938398466622}
-  speed: 3
+  speed: 2
   health: 100
   death: {fileID: 1463284287942124043}
   hittime: 0.1
