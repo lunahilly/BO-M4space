@@ -11544,7 +11544,7 @@ PrefabInstance:
       value: Guardian
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 633898631364902142, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 4fb003380c4fde649b7916ef18aa3891, type: 3}
 --- !u!1001 &5986363968372163856
 PrefabInstance:
