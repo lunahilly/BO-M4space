@@ -466,7 +466,7 @@ MonoBehaviour:
   heart3: {fileID: 0}
   hit: {fileID: 5961173944475183527}
   death: {fileID: 5145444948814820689}
-  rend: {fileID: 0}
+  rend: {fileID: 206767061402577149}
   hittime: 0.1
 --- !u!114 &6668064058096259768
 MonoBehaviour:
