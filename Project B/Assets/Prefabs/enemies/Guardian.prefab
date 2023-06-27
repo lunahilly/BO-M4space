@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6613070560730045033}
   - component: {fileID: 4666828500108815815}
-  - component: {fileID: 633898631364902142}
   - component: {fileID: 1366869046224622914}
   - component: {fileID: 6483077379750876743}
   - component: {fileID: 1463284287942124043}
   - component: {fileID: 249680140644275536}
   - component: {fileID: 2311613564151222949}
+  - component: {fileID: 5417750202473600720}
   m_Layer: 0
   m_Name: Lion-sprite
   m_TagString: Untagged
@@ -90,21 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &633898631364902142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409103000730560098}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 482446db4a342674887d476ce2c0b5b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
-  speed: 1
-  animator: {fileID: 0}
 --- !u!50 &1366869046224622914
 Rigidbody2D:
   serializedVersion: 4
@@ -275,15 +260,35 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 409103000730560098}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e86c880e90fbfb46b463fd8f2ede135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
   death: {fileID: 1463284287942124043}
-  hittime: 0
+  hittime: 0.1
   rend: {fileID: 4666828500108815815}
+--- !u!95 &5417750202473600720
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409103000730560098}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5c2557e28cf8fe542aba3e85add8a7f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1267179938398466622
 GameObject:
   m_ObjectHideFlags: 0
