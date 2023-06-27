@@ -13,11 +13,13 @@ public class DeathCollide : MonoBehaviour
     [SerializeField] AudioSource hit;
     [SerializeField] AudioSource death;
 
+    public static bool playerAlive;
+
     public SpriteRenderer rend;
     public float hittime;    // Start is called before the first frame update
     void Start()
     {
-
+        playerAlive= true;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -44,6 +46,7 @@ public class DeathCollide : MonoBehaviour
         {
             Destroy(heart1);
             Destroy(Player);
+            playerAlive = false;
             SceneManager.LoadScene("Death");
         }
         if (Lives == 2)
