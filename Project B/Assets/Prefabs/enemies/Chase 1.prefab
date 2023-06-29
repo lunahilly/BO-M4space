@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 206767061402577121, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
-  speed: 3
+  speed: 4
 --- !u!114 &7246611781545016006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +116,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 60
-  death: {fileID: 5812410268955388779}
   hittime: 0.1
   rend: {fileID: 7246611781545016004}
 --- !u!58 &5812410268955388777

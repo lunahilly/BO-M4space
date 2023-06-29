@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 206767061402577121, guid: 8ca6de473a37c6641b580afc0dadbb0d, type: 3}
   homepoint: {fileID: 1267179938398466622}
-  speed: 3
+  speed: 4
   health: 100
   death: {fileID: 1463284287942124043}
   hittime: 0.1
@@ -266,7 +266,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
-  death: {fileID: 1463284287942124043}
   hittime: 0.1
   rend: {fileID: 4666828500108815815}
 --- !u!95 &5417750202473600720

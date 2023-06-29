@@ -16,6 +16,8 @@ public class Weapon : MonoBehaviour
     private Camera mainCam;
     private Vector3 mousePos;
 
+    public AudioSource play;
+
     private void Start()
     {
         mainCam = Camera.main;
@@ -30,6 +32,7 @@ public class Weapon : MonoBehaviour
     {
         if (currentClip > 0)
         {
+            play.Play();
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
             currentClip--;
