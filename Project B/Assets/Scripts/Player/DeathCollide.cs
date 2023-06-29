@@ -9,9 +9,7 @@ public class DeathCollide : MonoBehaviour
     public GameObject Player;
     public GameObject heart1;
     public GameObject heart2;
-    public GameObject heart3;
-    [SerializeField] AudioSource hit;
-    [SerializeField] AudioSource death;
+    public GameObject heart3;   
 
     public static bool playerAlive;
 
@@ -52,13 +50,11 @@ public class DeathCollide : MonoBehaviour
         if (Lives == 2)
         {
             Destroy(heart3);
-            hit.Play();
         }
         if (Lives == 1)
         {
             Destroy(heart2);
             Destroy(heart3);
-            hit.Play();
         }
     }
 
