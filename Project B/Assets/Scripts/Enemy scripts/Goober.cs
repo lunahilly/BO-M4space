@@ -5,7 +5,6 @@ using UnityEngine;
 public class Goober : MonoBehaviour
 {
     [SerializeField] int health;
-    [SerializeField] AudioSource death;
     public float hittime;
     public SpriteRenderer rend;
 
@@ -14,7 +13,6 @@ public class Goober : MonoBehaviour
         if (health <= 0 || health == 0)
         {
             //GetComponent<LootBag>().InstatiateLoot(transform.position);
-            death.Play();
             Destroy(gameObject);
             DoorOpening.Enemy -= 1;
         }
