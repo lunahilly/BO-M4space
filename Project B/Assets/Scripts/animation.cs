@@ -35,9 +35,5 @@ public class animation : MonoBehaviour
         {
             m_Animator.SetTrigger("dash");
         }
-        if ((Input.GetKey(KeyCode.Space)))
-        {
-
-        }
     }
 }

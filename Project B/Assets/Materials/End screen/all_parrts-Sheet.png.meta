@@ -112,7 +112,7 @@ TextureImporter:
         width: 21760
         height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +120,27 @@ TextureImporter:
       bones: []
       spriteID: 69eeb28b6aaa2b442828db6757651ff9
       internalID: -1506568729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_parrts-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 21103
+        y: 0
+        width: 657
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628c5b3b7e4fab5479a80429ccce7ed3
+      internalID: 1531390006
       vertices: []
       indices: 
       edges: []
@@ -136,6 +157,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       all_parrts-Sheet_0: -1506568729
+      all_parrts-Sheet_1: 1531390006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
