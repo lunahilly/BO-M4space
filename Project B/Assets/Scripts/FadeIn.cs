@@ -5,6 +5,7 @@ using UnityEngine;
 public class FadeIn : MonoBehaviour
 {
     SpriteRenderer rend;
+    public float wait;
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();
@@ -23,7 +24,7 @@ public class FadeIn : MonoBehaviour
     }
     IEnumerator FadeOut()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(wait);
         for (float f = 1f; f >= -0.05f; f -= 0.05f)
         {
             Color c = rend.material.color;
