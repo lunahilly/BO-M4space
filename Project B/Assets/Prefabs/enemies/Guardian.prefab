@@ -268,6 +268,7 @@ MonoBehaviour:
   health: 100
   hittime: 0.1
   rend: {fileID: 4666828500108815815}
+  blood: {fileID: 274575533734271823, guid: e86593b5cd144fb47b5ad0dd70faee0a, type: 3}
 --- !u!95 &5417750202473600720
 Animator:
   serializedVersion: 4

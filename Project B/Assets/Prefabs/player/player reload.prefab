@@ -179,8 +179,8 @@ MonoBehaviour:
   rotationSpeed: 100
   currentClip: 0
   maxClipSize: 5
-  currentAmmo: 0
-  maxAmmoSize: 20
+  currentAmmo: 40
+  maxAmmoSize: 40
   play: {fileID: 4870671741945593301}
 --- !u!1 &206767061402577121
 GameObject:
@@ -465,8 +465,6 @@ MonoBehaviour:
   heart1: {fileID: 0}
   heart2: {fileID: 0}
   heart3: {fileID: 0}
-  hit: {fileID: 0}
-  death: {fileID: 5145444948814820689}
   rend: {fileID: 206767061402577149}
   hittime: 0.1
 --- !u!114 &6668064058096259768

@@ -118,6 +118,7 @@ MonoBehaviour:
   health: 60
   hittime: 0.1
   rend: {fileID: 7246611781545016004}
+  blood: {fileID: 274575533734271823, guid: e86593b5cd144fb47b5ad0dd70faee0a, type: 3}
 --- !u!58 &5812410268955388777
 CircleCollider2D:
   m_ObjectHideFlags: 0
