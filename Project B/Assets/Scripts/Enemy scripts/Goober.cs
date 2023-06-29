@@ -7,12 +7,14 @@ public class Goober : MonoBehaviour
     [SerializeField] int health;
     public float hittime;
     public SpriteRenderer rend;
+    public ParticleSystem blood;
 
     void Update()
     {
         if (health <= 0 || health == 0)
         {
             //GetComponent<LootBag>().InstatiateLoot(transform.position);
+            GameObject go = Instantiate(blood.gameObject);
             Destroy(gameObject);
             DoorOpening.Enemy -= 1;
         }
