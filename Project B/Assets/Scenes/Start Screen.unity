@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1002722375}
-  wait: 25
+  wait: 20
 --- !u!212 &799336613
 SpriteRenderer:
   m_ObjectHideFlags: 0
