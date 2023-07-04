@@ -147,7 +147,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2825050589568391240}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 87fd70cab5957bf419de9191c5ebdd10, type: 3}
@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 717873114023186537, guid: a57b1fd9ce30bc94d82c69a3c567c8f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.82
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 717873114023186537, guid: a57b1fd9ce30bc94d82c69a3c567c8f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 717873114023186537, guid: a57b1fd9ce30bc94d82c69a3c567c8f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.79
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 717873114023186537, guid: a57b1fd9ce30bc94d82c69a3c567c8f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6976472316315637798, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9276326
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6976472316315637798, guid: 4e1f579cb9f80e84dab65f77e72bff23, type: 3}
       propertyPath: m_LocalPosition.z
@@ -499,6 +499,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
-  hittime: 0
+  hittime: 0.1
   rend: {fileID: 6671843096495722596}
   blood: {fileID: 274575533734271823, guid: e86593b5cd144fb47b5ad0dd70faee0a, type: 3}

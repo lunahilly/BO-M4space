@@ -179,8 +179,8 @@ MonoBehaviour:
   rotationSpeed: 100
   currentClip: 0
   maxClipSize: 5
-  currentAmmo: 40
-  maxAmmoSize: 40
+  currentAmmo: 0
+  maxAmmoSize: 20
   play: {fileID: 4870671741945593301}
 --- !u!1 &206767061402577121
 GameObject:
