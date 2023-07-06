@@ -35,7 +35,7 @@ public class DeathCollide : MonoBehaviour
         }
         if (col.gameObject.CompareTag("spikes"))    // Als de speler tegen een enemy botst
         {
-            Lives -= 1;
+            Lives -= 3;
             wait();
         }
     }

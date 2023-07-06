@@ -27,6 +27,18 @@ public class Goober : MonoBehaviour
             health -= Shooting.Damage;
             wait();
         }
+
+        if (col.gameObject.CompareTag("spikes"))
+        {
+            health -= Shooting.Damage;
+            wait();
+        }
+
+        if (col.gameObject.CompareTag("Lava"))
+        {
+            health -= Shooting.Damage;
+            wait();
+        }
     }
 
     public void HandleHit(int damage)
