@@ -428,68 +428,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfe2967a7071624981d55fa77bec0b8, type: 3}
---- !u!1001 &66046348
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1713440318}
-    m_Modifications:
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -8.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.39741784
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4713044350279449254, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-      propertyPath: m_Name
-      value: Chase 1 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
---- !u!4 &66046349 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4713044350279449250, guid: caef581861277a14b8dbe9e2294a49fe, type: 3}
-  m_PrefabInstance: {fileID: 66046348}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &98254030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -646,7 +584,7 @@ Transform:
   - {fileID: 1867273418}
   - {fileID: 1086111322}
   m_Father: {fileID: 1713440318}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &231361868
 PrefabInstance:
@@ -56401,7 +56339,7 @@ Transform:
   - {fileID: 619960942}
   - {fileID: 116631422}
   m_Father: {fileID: 1713440318}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &567157167
 PrefabInstance:
@@ -57283,7 +57221,7 @@ MonoBehaviour:
   door: {fileID: 872195700}
   waypoints: []
   speed: 0.3
-  enemies: 12
+  enemies: 11
 --- !u!1001 &954488944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58564,7 +58502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1528932201113485385, guid: 94b4918e2c29d9845a1c7f7e1f4ef204, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1528932201113485385, guid: 94b4918e2c29d9845a1c7f7e1f4ef204, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58703,7 +58641,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 66046349}
   - {fileID: 225061881}
   - {fileID: 556967142}
   - {fileID: 1573801745}
